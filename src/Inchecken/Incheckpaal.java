@@ -1,9 +1,13 @@
 package Inchecken;
 
-public class Incheckpaal extends Ovchipkaart {
+public class Incheckpaal {
 
-	public Incheckpaal(double saldo) {
-		super(saldo);
-		// TODO Auto-generated constructor stub
+	public void checkIn (Ovchipkaart kaart) {
+		if (kaart.inchecken()) {
+			System.out.println("Inchecken gelukt,genoeg saldo");
+		}
+		else {
+			System.out.println("Inchecken niet gelukt,niet genoeg saldo");
+		}
 	}
 }
