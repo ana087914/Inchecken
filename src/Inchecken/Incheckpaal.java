@@ -7,7 +7,7 @@ public class Incheckpaal {
 			System.out.println("Inchecken gelukt,genoeg saldo");
 		}
 		else {
-			System.out.println("Inchecken niet gelukt,niet genoeg saldo");
+			System.out.println("Inchecken mislukt,niet genoeg saldo");
 		}
 	}
 }
