@@ -20,4 +20,12 @@ public class Ovchipkaart {
             return false;
         }
     }
+
+public boolean opwaarderenMet(double bedrag) {
+    if (bedrag > 0) {
+        saldo += bedrag;
+        return true;
+    } else {
+        return false;
+    }
 }
