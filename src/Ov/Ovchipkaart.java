@@ -29,3 +29,14 @@ public boolean opwaarderenMet(double bedrag) {
         return false;
     }
 }
+public boolean opwaarderenTot(double totaal) {
+    if (totaal > saldo) {
+        double verschil = totaal - saldo;
+        saldo = totaal;
+        System.out.println("Saldo aangevuld met €" + verschil);
+        return true;
+    } else {
+        System.out.println("Saldo is al €" + saldo + " of hoger.");
+        return false;
+    }
+}}
