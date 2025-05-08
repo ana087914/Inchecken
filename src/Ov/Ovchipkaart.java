@@ -1,12 +1,18 @@
 package Ov;
 
 public class Ovchipkaart {
-    double saldo;
+    private double saldo;
 
     public Ovchipkaart(double saldo) {
         this.saldo = saldo;
     }
+    public double getSaldo() {
+        return saldo;
+    }
 
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
     public boolean inchecken() {
         return saldo >= 10;
     }
